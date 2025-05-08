@@ -655,7 +655,7 @@ img {
 }
 .line::before {
   position: absolute;
-  content: "";
+  
   width: 1px;
   height: 100%;
   top: 0;
@@ -664,7 +664,7 @@ img {
 }
 .line::after {
   position: absolute;
-  content: "";
+  
   width: 1px;
   height: 100%;
   left: calc(50% - 1px);
@@ -672,8 +672,8 @@ img {
   background: var(--white-4);
 }
 .line-3 {
-  position: absolute;
-  content: "";
+  
+  
   width: 1px;
   height: 100%;
   right: 0;
@@ -5122,6 +5122,11 @@ img {
 .header__inner-3 {
   padding: 10px 50px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .header__inner-3 {
+    padding: 20px;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header__inner-3 {
     padding: 20px;
@@ -6111,7 +6116,8 @@ img {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero__area-3 .sec-title {
-    font-size: 150px;
+    font-size: 120px;
+    font-weight: 400;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -6172,6 +6178,12 @@ img {
   left: 500px;
   top: -235px;
   height: 200px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .hero__area-3 .video-info {
+    left: 400px;
+    top: -190px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero__area-3 .video-info {
@@ -6527,7 +6539,7 @@ img {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero__text-3 {
-    padding-top: 50px;
+    padding-top: 180px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -11480,7 +11492,7 @@ img {
 }
 .portfolio__area-2::after {
   position: absolute;
-  content: "";
+  
   width: 1px;
   height: 100%;
   left: 84.6%;
@@ -11514,6 +11526,7 @@ img {
 }
 .portfolio__area-2 .sec-title-wrapper {
   text-align: center;
+  margin-left: 25px;
 }
 @media only screen and (max-width: 767px) {
   .portfolio__area-2 .sec-title-wrapper {
@@ -11538,6 +11551,16 @@ img {
   display: inline-block;
   padding-bottom: 120px;
   padding-right: 300px;
+  font-size: 80px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .portfolio__area-2 .sec-title-3 {
+    font-size: 80px;
+    background-size: 260px;
+    background-position: 70% 20px;
+    padding-right: 200px;
+    padding-bottom: 90px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .portfolio__area-2 .sec-title-3 {
@@ -12138,7 +12161,8 @@ img {
   font-size: 130px;
   line-height: 1;
   text-transform: uppercase;
-  color: grey;
+  color:whitesmoke;
+  text-shadow: #1e1e1e 0px 0px 10px;
   text-align: left;
   padding-top: 80px;
   position: absolute;
@@ -12163,7 +12187,7 @@ img {
 @media only screen and (max-width: 767px) {
   .portfolio__title-3 {
     font-size: 60px;
-    padding-top: 0;
+    padding-top: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
